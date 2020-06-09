@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <van-swipe :autoplay="3000" :width="300">
+    <van-swipe :autoplay="3000">
       <van-swipe-item v-for="(image, index) in images" :key="index">
         <img v-lazy="image" />
       </van-swipe-item>
@@ -24,6 +24,13 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .home{
+
+  .van-swipe__track img{
+    width: 100%;
+    height: 100%;
+  }
+  .van-swipe-item{
+    padding: 30px 50px;
+    box-sizing: border-box;
   }
 </style>
