@@ -7,6 +7,7 @@
     </van-swipe>
 
     <van-grid :gutter="10" :column-num="3">
+      <van-grid-item v-for="value in 6" :key="value" icon="photo-o" text="文字" />
       <van-grid-item icon="../static/img/news.png" text="新闻资讯" @click="test" />
       <van-grid-item icon="../static/img/picShare.png" text="图文分享" />
       <van-grid-item icon="../static/img/goodsShow.png" text="商品展示" />
@@ -31,10 +32,10 @@
     methods: {
       test:function(){
         var loginMode = 'msdk'; //游戏内默认msdk(wx|qq|msdk)
-        var url = '/api/msdk/proxy/query_common_credit';
+        var url = 'http://localhost:8080/static/json/test.json';
         this.$axios.get(url)
           .then(response => {
-            resolve(response);
+
           })
           .catch(error => {
 
