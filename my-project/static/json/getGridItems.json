@@ -1,0 +1,31 @@
+[{
+    "id": "001",
+    "title": "新闻资讯",
+    "icon": "../static/img/news.png"
+  },
+  {
+    "id": "002",
+    "title": "图文分享",
+    "icon": "../static/img/picShare.png"
+  },
+  {
+    "id": "003",
+    "title": "商品展示",
+    "icon": "../static/img/goodsShow.png"
+  },
+  {
+    "id": "004",
+    "title": "留言反馈",
+    "icon": "../static/img/feedback.png"
+  },
+  {
+    "id": "005",
+    "title": "搜索资讯",
+    "icon": "../static/img/search.png"
+  },
+  {
+    "id": "006",
+    "title": "联系我们",
+    "icon": "../static/img/callme.png"
+  }
+]
