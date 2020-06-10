@@ -7,13 +7,7 @@
     </van-swipe>
 
     <van-grid :gutter="10" :column-num="3">
-      <van-grid-item v-for="(griditem,index) in gridItems" :key="griditem.id" icon="griditem.icon" text="griditem.title" />
-      <!--    <van-grid-item icon="../static/img/news.png" text="新闻资讯" />
-      <van-grid-item icon="../static/img/picShare.png" text="图文分享" />
-      <van-grid-item icon="../static/img/goodsShow.png" text="商品展示" />
-      <van-grid-item icon="../static/img/feedback.png" text="留言反馈" />
-      <van-grid-item icon="../static/img/search.png" text="搜索资讯" />
-      <van-grid-item icon="../static/img/callme.png" text="联系我们" /> -->
+      <van-grid-item v-for="(griditem,index) in gridItems" :key="griditem.id" :icon="griditem.icon" :text="griditem.title" />
     </van-grid>
   </div>
 </template>
@@ -27,9 +21,7 @@
           'https://img.yzcdn.cn/vant/apple-1.jpg',
           'https://img.yzcdn.cn/vant/apple-2.jpg',
         ],
-        gridItems: [
-
-        ]
+        gridItems:[]
       }
     },
     methods: {},
@@ -37,7 +29,7 @@
       var url = 'http://localhost:8080/static/json/getGridItems.json';
       this.$axios.get(url)
         .then(response => {
-          this.gridItems = response;
+          this.gridItems = response.data;
         })
         .catch(error => {
 
