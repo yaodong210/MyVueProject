@@ -1,0 +1,89 @@
+{
+  "success": true,
+  "data": [{
+    "id": "001",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "newspic": "../static/img/news.png",
+    "newshit": "50",
+    "createtime": "1592227742779",
+    "route": "/news/list"
+  },{
+    "id": "002",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "newspic": "../static/img/news.png",
+    "newshit": "50",
+    "createtime": "1592227742779",
+    "route": "/news/list"
+  },{
+    "id": "003",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "newspic": "../static/img/news.png",
+    "newshit": "50",
+    "createtime": "1592227742779",
+    "route": "/news/list"
+  },{
+    "id": "004",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "newspic": "../static/img/news.png",
+    "newshit": "50",
+    "createtime": "1592227742779",
+    "route": "/news/list"
+  },{
+    "id": "005",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "newspic": "../static/img/news.png",
+    "newshit": "50",
+    "createtime": "1592227742779",
+    "route": "/news/list"
+  },{
+    "id": "006",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "newspic": "../static/img/news.png",
+    "newshit": "50",
+    "createtime": "1592227742779",
+    "route": "/news/list"
+  },{
+    "id": "007",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "newspic": "../static/img/news.png",
+    "newshit": "50",
+    "createtime": "1592227742779",
+    "route": "/news/list"
+  },{
+    "id": "008",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "newspic": "../static/img/news.png",
+    "newshit": "50",
+    "createtime": "1592227742779",
+    "route": "/news/list"
+  },{
+    "id": "008",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "newspic": "../static/img/news.png",
+    "newshit": "50",
+    "createtime": "1592227742779",
+    "route": "/news/list"
+  },{
+    "id": "008",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "newspic": "../static/img/news.png",
+    "newshit": "50",
+    "createtime": "1592227742779",
+    "route": "/news/list"
+  },{
+    "id": "008",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "newspic": "../static/img/news.png",
+    "newshit": "50",
+    "createtime": "1592227742779",
+    "route": "/news/list"
+  },{
+    "id": "008",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "newspic": "../static/img/news.png",
+    "newshit": "50",
+    "createtime": "1592227742779",
+    "route": "/news/list"
+  }],
+  "msg": "请求成功"
+}

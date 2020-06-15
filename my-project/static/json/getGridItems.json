@@ -1,31 +1,37 @@
 [{
     "id": "001",
     "title": "新闻资讯",
-    "icon": "../static/img/news.png"
+    "icon": "../static/img/news.png",
+    "route":"/news/list"
   },
   {
     "id": "002",
     "title": "图文分享",
-    "icon": "../static/img/picShare.png"
+    "icon": "../static/img/picShare.png",
+    "route":""
   },
   {
     "id": "003",
     "title": "商品展示",
-    "icon": "../static/img/goodsShow.png"
+    "icon": "../static/img/goodsShow.png",
+    "route":""
   },
   {
     "id": "004",
     "title": "留言反馈",
-    "icon": "../static/img/feedback.png"
+    "icon": "../static/img/feedback.png",
+    "route":""
   },
   {
     "id": "005",
     "title": "搜索资讯",
-    "icon": "../static/img/search.png"
+    "icon": "../static/img/search.png",
+    "route":""
   },
   {
     "id": "006",
     "title": "联系我们",
-    "icon": "../static/img/callme.png"
+    "icon": "../static/img/callme.png",
+    "route":""
   }
 ]

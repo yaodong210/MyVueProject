@@ -6,9 +6,15 @@
       </van-swipe-item>
     </van-swipe>
 
-    <van-grid :gutter="10" :column-num="3">
-      <van-grid-item v-for="(griditem,index) in gridItems" :key="griditem.id" :icon="griditem.icon" :text="griditem.title" />
+    <van-grid :gutter="10" :column-num="3" :border="false">
+      <van-grid-item v-for="(griditem,index) in gridItems" :key="griditem.id" :icon="griditem.icon" :text="griditem.title" :to="griditem.route" />
     </van-grid>
+    <!-- <my-ul>
+       <my-item  v-for="(griditem,index) in gridItems"  :key="griditem.id" :icon="griditem.icon" :text="griditem.title" >
+
+       </my-item>
+    </my-ul> -->
+
   </div>
 </template>
 

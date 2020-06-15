@@ -1,0 +1,25 @@
+[{
+    "id": "001",
+    "title": "首页",
+    "icon": "../static/img/index.png",
+    "route":"/"
+  },
+  {
+    "id": "002",
+    "title": "发现",
+    "icon": "../static/img/find.png",
+    "route":"/find"
+  },
+  {
+    "id": "003",
+    "title": "购物车",
+    "icon": "../static/img/shopcart.png",
+    "route":"/shopcart"
+  },
+  {
+    "id": "004",
+    "title": "会员",
+    "icon": "../static/img/vip.png",
+    "route":"/member"
+  }
+]

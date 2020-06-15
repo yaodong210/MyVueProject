@@ -12,8 +12,24 @@ Vue.prototype.$axios=Axios;
 import { NavBar,Tabbar, TabbarItem,Swipe, SwipeItem} from 'vant';
 import { Lazyload } from 'vant';
 import { Grid, GridItem } from 'vant';
+import { List ,Cell,PullRefresh} from 'vant';
 
+import installer from '@/plugins/Installer.js';
+import myitem from '@/components/common/My-item.vue'
+import myul from '@/components/common/My-ul.vue'
+
+
+Vue.component(myul.name,myul);
+Vue.component(myitem.name,myitem);
+
+
+
+
+Vue.use(installer);
 Vue.use(Grid);
+Vue.use(List);
+Vue.use(Cell);
+Vue.use(PullRefresh);
 Vue.use(GridItem);
 Vue.use(Lazyload);
 Vue.use(NavBar);
