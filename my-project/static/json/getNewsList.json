@@ -4,85 +4,85 @@
     "id": "001",
     "newstitle": "新闻资讯xxxxxxxx",
     "newspic": "../static/img/news.png",
-    "newshit": "50",
-    "createtime": "1592227742779",
+    "newshit": "1",
+    "createtime": "2020-06-16T22:00:03+08:00",
     "route": "/news/list"
   },{
     "id": "002",
     "newstitle": "新闻资讯xxxxxxxx",
     "newspic": "../static/img/news.png",
-    "newshit": "50",
-    "createtime": "1592227742779",
+    "newshit": "2",
+    "createtime": "2020-06-16T22:00:03+08:00",
     "route": "/news/list"
   },{
     "id": "003",
     "newstitle": "新闻资讯xxxxxxxx",
     "newspic": "../static/img/news.png",
     "newshit": "50",
-    "createtime": "1592227742779",
+       "createtime": "2020-06-16T22:00:03+08:00",
     "route": "/news/list"
   },{
     "id": "004",
     "newstitle": "新闻资讯xxxxxxxx",
     "newspic": "../static/img/news.png",
     "newshit": "50",
-    "createtime": "1592227742779",
+     "createtime": "2020-06-16T22:00:03+08:00",
     "route": "/news/list"
   },{
     "id": "005",
     "newstitle": "新闻资讯xxxxxxxx",
     "newspic": "../static/img/news.png",
     "newshit": "50",
-    "createtime": "1592227742779",
+    "createtime": "2020-06-16T22:00:03+08:00",
     "route": "/news/list"
   },{
     "id": "006",
     "newstitle": "新闻资讯xxxxxxxx",
     "newspic": "../static/img/news.png",
     "newshit": "50",
-    "createtime": "1592227742779",
+     "createtime": "2020-06-16T22:00:03+08:00",
     "route": "/news/list"
   },{
     "id": "007",
     "newstitle": "新闻资讯xxxxxxxx",
     "newspic": "../static/img/news.png",
     "newshit": "50",
-    "createtime": "1592227742779",
+    "createtime": "2020-06-16T22:00:03+08:00",
     "route": "/news/list"
   },{
     "id": "008",
     "newstitle": "新闻资讯xxxxxxxx",
     "newspic": "../static/img/news.png",
     "newshit": "50",
-    "createtime": "1592227742779",
+    "createtime": "2020-06-16T22:00:03+08:00",
     "route": "/news/list"
   },{
     "id": "008",
     "newstitle": "新闻资讯xxxxxxxx",
     "newspic": "../static/img/news.png",
     "newshit": "50",
-    "createtime": "1592227742779",
+  "createtime": "2020-06-16T22:00:03+08:00",
     "route": "/news/list"
   },{
     "id": "008",
     "newstitle": "新闻资讯xxxxxxxx",
     "newspic": "../static/img/news.png",
     "newshit": "50",
-    "createtime": "1592227742779",
+    "createtime": "2020-06-16T22:00:03+08:00",
     "route": "/news/list"
   },{
     "id": "008",
     "newstitle": "新闻资讯xxxxxxxx",
     "newspic": "../static/img/news.png",
     "newshit": "50",
-    "createtime": "1592227742779",
+     "createtime": "2020-06-16T22:00:03+08:00",
     "route": "/news/list"
   },{
     "id": "008",
     "newstitle": "新闻资讯xxxxxxxx",
     "newspic": "../static/img/news.png",
     "newshit": "50",
-    "createtime": "1592227742779",
+      "createtime": "2020-06-16T22:00:03+08:00",
     "route": "/news/list"
   }],
   "msg": "请求成功"

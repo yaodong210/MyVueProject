@@ -8,6 +8,7 @@ import Axios from 'axios'
 
 Vue.config.productionTip = false
 Vue.prototype.$axios=Axios;
+// Vue.$axios.baseURL='http://localhost:8080/static/json';
 
 import { NavBar,Tabbar, TabbarItem,Swipe, SwipeItem} from 'vant';
 import { Lazyload } from 'vant';
@@ -17,12 +18,17 @@ import { List ,Cell,PullRefresh} from 'vant';
 import installer from '@/plugins/Installer.js';
 import myitem from '@/components/common/My-item.vue'
 import myul from '@/components/common/My-ul.vue'
-
+// import Filter from '@/filter/Filters.js'
 
 Vue.component(myul.name,myul);
 Vue.component(myitem.name,myitem);
 
+import moment from 'moment';
 
+Vue.filter('convertTime', function(data, formatStr) {
+
+  return moment(data).format(formatStr);
+})
 
 
 Vue.use(installer);

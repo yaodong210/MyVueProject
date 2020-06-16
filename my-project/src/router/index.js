@@ -5,6 +5,7 @@ import Find from '@/components/find/Find.vue'
 import Member from '@/components/member/Member.vue'
 import Shopcart from '@/components/shopcart/Shopcart.vue'
 import NewsList from '@/components/Home/NewsList.vue'
+import NewsDetail from '@/components/Home/NewsDetail.vue'
 
 //解决不能跳转自己
 const originalPush = Router.prototype.push
@@ -35,6 +36,10 @@ export default new Router({
       path: '/news/list',
       name: 'newsList',
       component: NewsList
+    }, {
+      path: '/news/:id',
+      name: 'newsDetail',
+      component: NewsDetail
     }
   ]
 })
