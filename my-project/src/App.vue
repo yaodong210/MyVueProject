@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <van-nav-bar class="m-header" title="信息管理系统" />
-    <router-view />
+    <router-view class="m-center" />
 
     <van-tabbar v-model="active">
       <van-tabbar-item v-for="(tabbaritem,index) in tabbarItems" :key="tabbaritem.id" :icon="tabbaritem.icon" :text="tabbaritem.title" :to="tabbaritem.route">{{tabbaritem.title}}</van-tabbar-item>
@@ -36,38 +36,56 @@
 </template>
 
 <script>
-  export default {
-    name: 'App',
-    data() {
-      return {
-        active: 0,
-        icon: {
-          index: '../static/img/index.png',
-          find: '../static/img/find.png',
-          shopcart: '../static/img/shopcart.png',
-          vip: '../static/img/vip.png',
-        },
-        tabbarItems: []
-      }
-    },
-    created() {
-      var url = 'http://localhost:8080/static/json/getTabbarItems.json';
-      this.$axios.get(url)
-        .then(response => {
-          this.tabbarItems = response.data;
-        })
-        .catch(error => {
-
-        })
+export default {
+  name: 'App',
+  data () {
+    return {
+      active: 0,
+      icon: {
+        index: '../static/img/index.png',
+        find: '../static/img/find.png',
+        shopcart: '../static/img/shopcart.png',
+        vip: '../static/img/vip.png'
+      },
+      tabbarItems: []
     }
+  },
+  created () {
+    var url = 'http://localhost:8080/static/json/getTabbarItems.json'
+    this.$axios.get(url)
+      .then(response => {
+        this.tabbarItems = response.data
+      })
+      .catch(error => {
+
+      })
   }
+}
 </script>
 
 <style>
+html,body{
+  width: 100%;
+  height: 100%;
+}
+  #app{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
   .m-header {
+    width: 100%;
     height: 50px;
     line-height: 50px;
     background: #245fd7;
     color: #fff;
+  }
+  .m-center{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
   }
 </style>

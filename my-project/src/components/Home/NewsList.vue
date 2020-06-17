@@ -11,64 +11,64 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        title: '新闻列表',
-        newslist: [],
-        loading: false,
-        finished: false,
-        refreshing: false,
-      };
+export default {
+  data () {
+    return {
+      title: '新闻列表',
+      newslist: [],
+      loading: false,
+      finished: false,
+      refreshing: false
+    }
+  },
+  created () {
+    this.loading = true
+    var url = 'http://localhost:8080/static/json/getNewsList.json'
+    this.$axios.get(url).then(response => {
+      if (response.data.success) {
+        console.log(response)
+        this.newslist = response.data.data
+      }
+    }).catch(error => {
+
+    })
+    this.finished = true
+    this.refreshing = false
+  },
+  methods: {
+    onClickLeft () {
+      this.$router.go(-1)
     },
-    created() {
-      this.loading=true;
-      var url = 'http://localhost:8080/static/json/getNewsList.json';
+    onLoad () {
+      var url = 'http://localhost:8080/static/json/getNewsList.json'
       this.$axios.get(url).then(response => {
         if (response.data.success) {
-          console.log(response);
-          this.newslist = response.data.data;
+          console.log(response)
+          this.newslist = response.data.data
+        } else {
+
         }
       }).catch(error => {
 
       })
-      this.finished = true;
-      this.refreshing = false;
+      this.finished = true
+      this.refreshing = false
     },
-    methods: {
-      onClickLeft() {
-        this.$router.go(-1);
-      },
-      onLoad() {
-        var url = 'http://localhost:8080/static/json/getNewsList.json';
-        this.$axios.get(url).then(response => {
-          if (response.data.success) {
-            console.log(response);
-            this.newslist = response.data.data;
-          } else {
+    onRefresh () {
+      // 清空列表数据
+      this.finished = false
 
-          }
-        }).catch(error => {
-
-        })
-        this.finished = true;
-        this.refreshing = false;
-      },
-      onRefresh() {
-        // 清空列表数据
-        this.finished = false;
-
-        // 重新加载数据
-        // 将 loading 设置为 true，表示处于加载状态
-        this.loading = true;
-        // this.refreshing = true;
-        this.onLoad();
-      },
-      queryOneNew(id) {
-          this.$router.push({ name: 'newsDetail', params: { id: id }});
-      }
+      // 重新加载数据
+      // 将 loading 设置为 true，表示处于加载状态
+      this.loading = true
+      // this.refreshing = true;
+      this.onLoad()
     },
-  };
+    queryOneNew (id) {
+      this.$router.push({ name: 'newsDetail', params: { id: id }})
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -81,8 +81,8 @@
     align-self: flex-end;
     margin-left: auto;
   }
-
-  /* .van-nav-bar{
-  position: fixed;
-} */
+  .van-pull-refresh{
+    flex: 1;
+    overflow-y: auto!important;
+  }
 </style>
