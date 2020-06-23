@@ -14,6 +14,7 @@ import { NavBar,Tabbar, TabbarItem,Swipe, SwipeItem} from 'vant';
 import { Lazyload } from 'vant';
 import { Grid, GridItem } from 'vant';
 import { List ,Cell,PullRefresh} from 'vant';
+import { Tab, Tabs } from 'vant';
 
 import installer from '@/plugins/Installer.js';
 import myitem from '@/components/common/My-item.vue'
@@ -26,11 +27,11 @@ Vue.component(myitem.name,myitem);
 import moment from 'moment';
 
 Vue.filter('convertTime', function(data, formatStr) {
-
   return moment(data).format(formatStr);
 })
 
-
+Vue.use(Tab);
+Vue.use(Tabs);
 Vue.use(installer);
 Vue.use(Grid);
 Vue.use(List);
