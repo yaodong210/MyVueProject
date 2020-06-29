@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-nav-bar :title="navtitle" left-text="返回" left-arrow @click-left="onClickLeft" />
+    <van-nav-bar class="nav_bar" :title="navtitle" left-text="返回" left-arrow @click-left="onClickLeft" />
     <van-tabs @click="navigateToCateById">
       <van-tab v-for="photocate in photoCateList" :title="photocate.catetitle" :key="photocate.id" :name="photocate.id">
         <div class="photo-list">
@@ -33,10 +33,10 @@
     },
     created() {
 
-      let {
-        categoryId
-      } = this.$route.query;
-      this.loadImgByCateId(categoryId);
+      // let {
+      //   categoryId
+      // } = this.$route.query;
+      this.loadImgByCateId('000');
 
       var url = 'http://localhost:8080/static/json/getAllPhotoCateList.json';
       this.$axios.get(url).then(response => {
@@ -49,24 +49,20 @@
         console.log(error);
       })
     },
-    beforeRouteUpdate(to, from, next) {
-      // console.log(to);
-      // console.log(from);
-      let {
-        categoryId
-      } = to.query;
-      // 发请求更改页面数据
-      this.loadImgsById(categoryId);
+    // beforeRouteUpdate(to, from, next) {
+    //   let categoryId = to.query.categoryId;
+    //   // 发请求更改页面数据
+    //   this.loadImgByCateId(categoryId);
 
-      next();
-      // 在当前路由改变，但是该组件被复用时调用
-      // 举例来说，对于一个带有动态参数的路径 /foo/:id，在 /foo/1 和 /foo/2 之间跳转的时候，
-      // 由于会渲染同样的 Foo 组件，因此组件实例会被复用。而这个钩子就会在这个情况下被调用。
-      // 可以访问组件实例 `this`
-    },
+    //   next();
+    //   // 在当前路由改变，但是该组件被复用时调用
+    //   // 举例来说，对于一个带有动态参数的路径 /foo/:id，在 /foo/1 和 /foo/2 之间跳转的时候，
+    //   // 由于会渲染同样的 Foo 组件，因此组件实例会被复用。而这个钩子就会在这个情况下被调用。
+    //   // 可以访问组件实例 `this`
+    // },
     methods: {
       onClickLeft() {
-        this.$router.go(-1);
+        this.$router.push('/')
       },
       navigateToCateById(name) {
         this.$router.push({

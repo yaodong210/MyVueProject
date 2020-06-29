@@ -7,22 +7,53 @@ import '../static/js/mock.js'
 import Axios from 'axios'
 
 Vue.config.productionTip = false
-Vue.prototype.$axios=Axios;
-// Vue.$axios.baseURL='http://localhost:8080/static/json';
+Vue.prototype.$axios = Axios;
+// Axios.defaults.baseURL='http://localhost:8080/static/json';
+//设置一个axios的拦截器
+Axios.interceptors.request.use(function(config) {
+  console.log(config);
+  return config;
+})
+Axios.interceptors.response.use(function(response) {
+  console.log(response);
+  return response;
+})
 
-import { NavBar,Tabbar, TabbarItem,Swipe, SwipeItem} from 'vant';
-import { Lazyload } from 'vant';
-import { Grid, GridItem } from 'vant';
-import { List ,Cell,PullRefresh} from 'vant';
-import { Tab, Tabs } from 'vant';
+
+import {
+  NavBar,
+  Tabbar,
+  TabbarItem,
+  Swipe,
+  SwipeItem
+} from 'vant';
+import {
+  Lazyload
+} from 'vant';
+import {
+  Grid,
+  GridItem
+} from 'vant';
+import {
+  List,
+  Cell,
+  PullRefresh
+} from 'vant';
+import {
+  Tab,
+  Tabs
+} from 'vant';
+import {
+  Loading
+} from 'vant';
 
 import installer from '@/plugins/Installer.js';
 import myitem from '@/components/common/My-item.vue'
 import myul from '@/components/common/My-ul.vue'
 // import Filter from '@/filter/Filters.js'
 
-Vue.component(myul.name,myul);
-Vue.component(myitem.name,myitem);
+Vue.component(myul.name, myul);
+Vue.component(myitem.name, myitem);
 
 import moment from 'moment';
 
@@ -30,6 +61,7 @@ Vue.filter('convertTime', function(data, formatStr) {
   return moment(data).format(formatStr);
 })
 
+Vue.use(Loading);
 Vue.use(Tab);
 Vue.use(Tabs);
 Vue.use(installer);
@@ -50,6 +82,8 @@ Vue.use(SwipeItem);
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })
