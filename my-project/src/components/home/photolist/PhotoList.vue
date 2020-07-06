@@ -1,19 +1,20 @@
 <template>
-  <div>
+  <div class="temp">
     <van-nav-bar class="nav_bar" :title="navtitle" left-text="返回" left-arrow @click-left="onClickLeft" />
     <van-tabs @click="navigateToCateById">
       <van-tab v-for="photocate in photoCateList" :title="photocate.catetitle" :key="photocate.id" :name="photocate.id">
         <div class="photo-list">
           <ul>
             <li v-for="(img,index) in imageList" :key="index">
-              <a>
-                <img v-lazy="img.photo">
+              <router-link :to="{ name:'photodetail',params:{id:img.id} }">
+                <img v-if="$route.query.categoryId === '000'" v-lazy="img.photo">
+                <img v-else :src="img.photo">
                 <p>
                   <span>{{img.title}}</span>
                   <br>
                   <span>{{img.desc}}</span>
                 </p>
-              </a>
+               </router-link>
             </li>
           </ul>
         </div>

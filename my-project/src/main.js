@@ -11,11 +11,11 @@ Vue.prototype.$axios = Axios;
 // Axios.defaults.baseURL='http://localhost:8080/static/json';
 //设置一个axios的拦截器
 Axios.interceptors.request.use(function(config) {
-  console.log(config);
+  // console.log(config);
   return config;
 })
 Axios.interceptors.response.use(function(response) {
-  console.log(response);
+  // console.log(response);
   return response;
 })
 

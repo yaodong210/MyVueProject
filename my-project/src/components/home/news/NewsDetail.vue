@@ -9,7 +9,7 @@
         <span>添加时间:{{newsInfo.createtime | convertTime('YYYY-MM-DD')}}</span>
       </div>
     </div>
-    <div class="news-content" v-html="newsInfo.content"></div>
+    <div class="news-content"  v-html="newsInfo.content" ></div>
   </div>
 </template>
 
@@ -62,5 +62,6 @@
 
   .news-content {
     padding: 10 5;
+    overflow-y:scroll;
   }
 </style>

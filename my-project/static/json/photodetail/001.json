@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "data": {
+    "id": "001",
+    "phototitle": "新闻资讯xxxxxxxx",
+    "photopic": "../static/img/photo.png",
+    "photohit": "1",
+    "createtime": "2020-06-16T22:00:03+08:00",
+    "content":"迄今为止，在我们的模板中，我们一直都只绑定简单的 property 键值。但实际上"
+  },
+  "msg": "请求成功"
+}

@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "data": [{
+    "id": "001",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "src": "../static/img/news.png",
+    "newshit": "1",
+    "createtime": "2020-06-16T22:00:03+08:00"
+  },{
+    "id": "001",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "src": "../static/img/news.png",
+    "newshit": "1",
+    "createtime": "2020-06-16T22:00:03+08:00"
+  },{
+    "id": "001",
+    "newstitle": "新闻资讯xxxxxxxx",
+    "src": "../static/img/news.png",
+    "newshit": "1",
+    "createtime": "2020-06-16T22:00:03+08:00"
+  }],
+  "msg": "请求成功"
+}

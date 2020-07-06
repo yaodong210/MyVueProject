@@ -7,6 +7,7 @@ import Shopcart from '@/components/shopcart/Shopcart.vue'
 import NewsList from '@/components/home/news/NewsList.vue'
 import NewsDetail from '@/components/home/news/NewsDetail.vue'
 import PhotoList from '@/components/home/photolist/PhotoList.vue'
+import PhotoDetail from '@/components/home/photolist/PhotoDetail.vue'
 
 // 解决不能跳转自己
 const originalPush = Router.prototype.push
@@ -45,6 +46,10 @@ export default new Router({
       path: '/photo/list',
       name: 'photolist',
       component: PhotoList
+    }, {
+      path: '/photo/detail',
+      name: 'photodetail',
+      component: PhotoDetail
     }
   ]
 })
