@@ -59,7 +59,9 @@
   }
 
   /*主体文章的左右距离*/
-
+  .van-nav-bar {
+     height: 95px;
+  }
   .news-content {
     padding: 10 5;
     overflow-y:scroll;

@@ -8,6 +8,8 @@ import NewsList from '@/components/home/news/NewsList.vue'
 import NewsDetail from '@/components/home/news/NewsDetail.vue'
 import PhotoList from '@/components/home/photolist/PhotoList.vue'
 import PhotoDetail from '@/components/home/photolist/PhotoDetail.vue'
+import GoodsList from '@/components/home/goods/goodsList.vue'
+import GoodDetail from '@/components/home/goods/goodDetail.vue'
 
 // 解决不能跳转自己
 const originalPush = Router.prototype.push
@@ -50,6 +52,14 @@ export default new Router({
       path: '/photo/detail',
       name: 'photodetail',
       component: PhotoDetail
+    }, {
+      path: '/goods/list',
+      name: 'goodslist',
+      component: GoodsList
+    }, {
+      path: '/good/detail',
+      name: 'gooddetail',
+      component: GoodDetail
     }
   ]
 })

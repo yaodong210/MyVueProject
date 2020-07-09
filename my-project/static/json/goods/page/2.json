@@ -1,0 +1,57 @@
+{
+  "success": true,
+  "total":17,
+  "pagesize":10,
+  "pagenum":2,
+  "data": [{
+    "id": "011",
+    "goodstitle":"连衣裙啊11111111",
+    "src": "../static/img/goods/11.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "012",
+    "goodstitle":"连衣裙啊11112222",
+    "src": "../static/img/goods/12.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "013",
+    "goodstitle":"连衣裙啊11113333",
+    "src": "../static/img/goods/13.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "014",
+    "goodstitle":"连衣裙啊11114444",
+    "src": "../static/img/goods/14.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "015",
+    "goodstitle":"连衣裙啊11115555",
+    "src": "../static/img/goods/15.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "016",
+    "goodstitle":"连衣裙啊11116666",
+    "src": "../static/img/goods/16.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "017",
+    "goodstitle":"连衣裙啊7",
+    "src": "../static/img/goods/17.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  }],
+  "msg": "请求成功"
+}

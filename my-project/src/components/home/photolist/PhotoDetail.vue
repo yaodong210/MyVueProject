@@ -9,7 +9,7 @@
     </div>
 
     <!-- <vue-preview :slides="imgs"></vue-preview> -->
-    <my-ul>
+   <my-ul>
       <my-item v-for="(img,index) in imgs " :key="index">
         <img :src="img.src" slot="icon">
       </my-item>
@@ -20,7 +20,7 @@
 
 
     <!-- 使用评论组件 -->
-    <!-- <comment :cid="$route.params.id" /> -->
+  <!--  <comment :cid="$route.params.id" /> -->
 
 
   </div>

@@ -14,7 +14,7 @@
     "id": "003",
     "title": "商品展示",
     "icon": "../static/img/goodsShow.png",
-    "route":""
+    "route":"/goods/list"
   },
   {
     "id": "004",

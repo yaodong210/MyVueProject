@@ -3,19 +3,19 @@
   "data": [{
     "id": "001",
     "newstitle": "新闻资讯xxxxxxxx",
-    "src": "../static/img/news.png",
+    "src": "../static/img/photoList/1.jpeg",
     "newshit": "1",
     "createtime": "2020-06-16T22:00:03+08:00"
   },{
-    "id": "001",
+    "id": "002",
     "newstitle": "新闻资讯xxxxxxxx",
-    "src": "../static/img/news.png",
+    "src": "../static/img/photoList/1.jpeg",
     "newshit": "1",
     "createtime": "2020-06-16T22:00:03+08:00"
   },{
-    "id": "001",
+    "id": "003",
     "newstitle": "新闻资讯xxxxxxxx",
-    "src": "../static/img/news.png",
+    "src": "../static/img/photoList/1.jpeg",
     "newshit": "1",
     "createtime": "2020-06-16T22:00:03+08:00"
   }],

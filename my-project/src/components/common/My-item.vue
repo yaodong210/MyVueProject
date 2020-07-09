@@ -1,7 +1,13 @@
 <template>
-  <li >
-      <span ><img :src="icon"/></span>
-      <div>{{text}}</div>
+  <li>
+    <!-- <span><img :src="icon" /></span>
+    <div>{{text}}</div>
+
+    <slot></slot> -->
+    <div class="icon">
+      <!-- slot其实是不存在的，所以不要设置他 -->
+      <slot name="icon"></slot>
+    </div>
   </li>
 </template>
 
@@ -13,7 +19,7 @@
 
       }
     },
-    props:['icon','text']
+    props: ['icon', 'text']
   }
 </script>
 
@@ -24,7 +30,12 @@
     width: 33.333%;
     text-align: center;
   }
-  span{
-      width:0.625rem
+
+  span {
+    width: 0.625rem
+  }
+
+  .icon img {
+    width: 100%;
   }
 </style>

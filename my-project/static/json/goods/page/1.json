@@ -1,0 +1,78 @@
+{
+  "success": true,
+  "total":10,
+  "pagesize":10,
+  "pagenum":1,
+  "data": [{
+    "id": "001",
+    "goodstitle":"连衣裙啊1111",
+    "src": "../static/img/goods/1.jpg",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "002",
+    "goodstitle":"连衣裙啊2222",
+    "src": "../static/img/goods/2.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "003",
+    "goodstitle":"连衣裙啊3333",
+    "src": "../static/img/goods/3.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "004",
+    "goodstitle":"连衣裙啊4444",
+    "src": "../static/img/goods/4.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "005",
+    "goodstitle":"连衣裙啊5555",
+    "src": "../static/img/goods/5.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "006",
+    "goodstitle":"连衣裙啊6666",
+    "src": "../static/img/goods/6.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "007",
+    "goodstitle":"连衣裙啊7",
+    "src": "../static/img/goods/7.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "008",
+    "goodstitle":"连衣裙啊8",
+    "src": "../static/img/goods/8.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "009",
+    "goodstitle":"连衣裙啊9",
+    "src": "../static/img/goods/9.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  },{
+    "id": "010",
+    "goodstitle":"连衣裙啊10",
+    "src": "../static/img/goods/10.jpg ",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80"
+  }],
+  "msg": "请求成功"
+}
