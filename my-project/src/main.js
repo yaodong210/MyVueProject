@@ -44,10 +44,16 @@ import {
   Tabs
 } from 'vant';
 import {
-  Loading
+  Loading,
+  Toast
+} from 'vant';
+import {
+  GoodsAction,
+  GoodsActionIcon,
+  GoodsActionButton
 } from 'vant';
 
-import VuePreview from'vue-preview'
+import VuePreview from 'vue-preview'
 import installer from '@/plugins/Installer.js';
 import myitem from '@/components/common/My-item.vue'
 import myul from '@/components/common/My-ul.vue'
@@ -56,7 +62,7 @@ import Comment from '@/components/common/Comment.vue'
 
 Vue.component(myul.name, myul);
 Vue.component(myitem.name, myitem);
-Vue.component(Comment.name,Comment);
+Vue.component(Comment.name, Comment);
 
 import moment from 'moment';
 
@@ -64,6 +70,10 @@ Vue.filter('convertTime', function(data, formatStr) {
   return moment(data).format(formatStr);
 })
 
+Vue.use(GoodsAction);
+Vue.use(GoodsActionButton);
+Vue.use(GoodsActionIcon);
+Vue.use(Toast)
 Vue.use(VuePreview)
 Vue.use(Loading);
 Vue.use(Tab);

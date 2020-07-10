@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "data": {
+    "id": "001",
+    "goodstitle":"最美的连衣裙，送给最漂亮的她!",
+    "src": "../static/img/goods/1.jpg",
+    "oriprice":"50.00",
+    "currprice":"25.00",
+    "stock":"80",
+    "uptime":"2020-06-16T22:00:03+08:00"
+  },
+  "msg": "请求成功"
+}

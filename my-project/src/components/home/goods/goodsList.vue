@@ -1,28 +1,30 @@
 <template>
   <div class='my-div'>
     <van-nav-bar :title="title" left-text="返回" left-arrow @click-left="onClickLeft" />
-    <ul class='goods-center'>
-      <li v-for="(goods,index) in goodsList" :key="goods.id">
-        <a>
-          <img :src='goods.src'>
-          <div class="title">{{goods.goodtitle}}</div>
-          <div class="desc">
-            <div class="sell">
-              <span>￥{{goods.currprice}}</span>
-              <s>￥{{goods.oriprice}}</s>
-            </div>
-            <div class="detail">
-              <div class="hot">
-                热卖中
+    <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+      <ul class='goods-center'>
+        <li v-for="(goods,index) in goodsList" :key="goods.id" >
+           <router-link :to="{ name:'gooddetail',query:{id:goods.id } }">
+            <img :src='goods.src'>
+            <div class="title">{{goods.goodtitle}}</div>
+            <div class="desc">
+              <div class="sell">
+                <span>￥{{goods.currprice}}</span>
+                <s>￥{{goods.oriprice}}</s>
               </div>
-              <div class="count">
-                剩{{goods.stock}}件
+              <div class="detail">
+                <div class="hot">
+                  热卖中
+                </div>
+                <div class="count">
+                  剩{{goods.stock}}件
+                </div>
               </div>
             </div>
-          </div>
-        </a>
-      </li>
-    </ul>
+            </router-link>
+        </li>
+      </ul>
+    </van-pull-refresh>
   </div>
 </template>
 <script>
@@ -33,23 +35,49 @@
         title: '商品列表',
         goodsList: [],
         pageindex: '',
+        pagesize: '',
+        total: '',
+        count: 0,
+        isLoading: false,
+
       }
     },
     methods: {
       onClickLeft() {
         this.$router.go(-1)
       },
+      onRefresh() {
+        console.log(this.pageindex);
+        console.log(this.pagesize);
+        console.log(this.total);
+        if (this.pageindex  * this.pagesize > this.total) {
+          this.$toast('已经没有内容了,客官轻一点!');
+          this.isLoading = false;
+          return;
+        }
+        this.loadAllGoodsWithPage(this.pageindex += 1);
+        this.isLoading = false;
+      },
       loadAllGoodsWithPage(pageindex) {
         let url = 'http://localhost:8080/static/json/goods/page/' + pageindex + '.json';
         this.$axios.get(url).then(response => {
+
           if (!response.data.success) {
             console.log('系统异常');
           }
           this.pageindex = response.data.pagenum;
-          this.goodsList = response.data.data;
-
+          this.pagesize=response.data.pagesize;
+          this.total=response.data.total;
+          if (this.pageindex === 1) {
+            this.goodsList = response.data.data;
+          } else {
+            // 追加
+            this.goodsList = this.goodsList.concat(response.data.data);
+          }
         }).catch(error => {
-          console.log('系统异常');
+          // console.log('系统异常');
+          console.log(error);
+
         })
       }
     },
@@ -118,15 +146,20 @@
 
   .goods-center {
     padding: 10 5;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
 
   .my-div {
     margin-bottom: 50px;
+    /* overflow-y: scroll; */
   }
 
   .van-nav-bar {
-     height: 95px;
+    height: 95px;
+  }
+
+  .van-pull-refresh {
+    overflow-y: scroll;
   }
 
   img {
