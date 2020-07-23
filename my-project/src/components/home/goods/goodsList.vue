@@ -154,9 +154,9 @@
     /* overflow-y: scroll; */
   }
 
-  .van-nav-bar {
+ /* .van-nav-bar {
     height: 95px;
-  }
+  } */
 
   .van-pull-refresh {
     overflow-y: scroll;

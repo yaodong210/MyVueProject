@@ -46,6 +46,10 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .van-swipe{
+    width: 100%;
+    height:18rem;
+  }
   .van-swipe__track img {
     width: 100%;
     height: 100%;

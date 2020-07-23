@@ -73,7 +73,6 @@ export default {
 
 <style scoped>
   .van-cell__value {
-    display: flex;
     align-items: inherit;
   }
 
